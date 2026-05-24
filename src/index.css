@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Force global dark theme baseline rules directly on the DOM roots */
+:root, html, body {
+  background-color: #030712 !important;
+  color: #cbd5e1 !important;
+  scroll-behavior: smooth;
+}
+
+/* Ensure all link and header elements contrast flawlessly against the dark base */
+h1, h2, h3, h4 {
+  color: #f8fafc !important;
+}
+
+a {
+  color: #2dd4bf !important;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+}
