@@ -24,7 +24,7 @@ export default function MainLayout({
         </div>
 
         {/* Main Content */}
-        <main className="flex-1 px-4 py-6 sm:px-6 lg:px-12 lg:py-10">
+        <main className="w-full flex-1 px-5 py-6 sm:px-6 lg:px-12 lg:py-10">
           {children}
         </main>
       </div>
