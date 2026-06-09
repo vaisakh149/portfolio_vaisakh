@@ -1,8 +1,10 @@
 import HeroStats from "./HeroStats";
 export default function HeroSection() {
   return (
-    <section className="relative flex min-h-[85vh] items-center overflow-hidden">
-      
+    <section
+  id="experience"
+  className="mt-24"
+>
       {/* Background Glow */}
       <div className="absolute right-0 top-1/2 h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-cyan-500/10 blur-3xl sm:h-[500px] sm:w-[500px]" />
 

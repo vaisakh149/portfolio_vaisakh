@@ -4,54 +4,57 @@ const experiences = [
   {
     company: "Tata Elxsi",
     role: "Senior Engineer",
-    duration: "10/2022 - Present",
+    duration: "Oct 2022 - Present",
     techStack: [
-      "React.JS","Javascript",
+      "React",
       "TypeScript",
       "Node.js",
       "Redux",
       "REST APIs",
     ],
-    details: [
-      "Working on industrial monitoring and control systems",
-      "Developing scalable React applications",
-      "Building reusable component architecture",
-      "API integration and data visualization",
+    highlights: [
+      "Developing Caterpillar ECS 200 web-based monitoring platform",
+      "Building reusable React and TypeScript component architecture",
+      "Working on industrial monitoring and telemetry dashboards",
+      "API integration and real-time visualization systems",
+      "Contributing to scalable frontend design patterns",
     ],
   },
   {
-    company: "Trenser Technology Solutions (P) Ltd",
+    company: "Trenser Technology Solutions",
     role: "Software Engineer",
-    duration: "04/2022 - 10/2022",
-      techStack: [
-        "React.JS",
+    duration: "Apr 2022 - Oct 2022",
+    techStack: [
+      "React",
       "JavaScript",
       "HTML",
       "CSS",
-      ,
     ],
-    details: [
-      "Developed web applications",
-      "Worked on frontend modules",
-      "Collaborated with cross-functional teams",
+    highlights: [
+      "Worked on enterprise web applications",
+      "Implemented frontend enhancements",
+      "Collaborated with product and backend teams",
+      "Improved application usability and responsiveness",
     ],
   },
   {
     company: "UL Technology Solutions",
     role: "Software Engineer",
-    duration: "05/2019 - 04/2022",
+    duration: "May 2019 - Apr 2022",
     techStack: [
       "JavaScript",
-      "React", 'Node.Js',
+      "React",
+      "Node.js",
       "HTML",
-      "CSS","IoT",'AI'
+      "CSS",
     ],
-    details: [
-      "Worked on enterprise web applications",
-      "Implemented UI enhancements",
-      "Improved application performance",
+    highlights: [
+      "Developed customer-facing web applications",
+      "Worked on UI components and dashboard modules",
+      "Maintained production applications",
+      "Participated in feature development and bug fixes",
     ],
-  }
+  },
 ];
 
 export default function ExperienceSection() {
@@ -72,7 +75,7 @@ export default function ExperienceSection() {
         </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="mt-12 space-y-10">
         {experiences.map((experience) => (
           <ExperienceCard
             key={experience.company}
