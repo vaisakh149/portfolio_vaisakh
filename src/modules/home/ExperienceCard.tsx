@@ -18,6 +18,7 @@ export default function ExperienceCard({
   const [expanded, setExpanded] = useState(false);
 
   return (
+    <section id="experience">
     <div className="relative pl-10">
       {/* Timeline Dot */}
       <div className="absolute left-0 top-3 h-4 w-4 rounded-full border-4 border-cyan-400 bg-slate-950" />
@@ -75,6 +76,6 @@ export default function ExperienceCard({
           {expanded ? "Show Less" : "Show More"}
         </button>
       </div>
-    </div>
+    </div></section>
   );
 }

@@ -11,10 +11,14 @@ export const navigationItems = [
     label: "Projects",
     sectionId: "projects",
   },
+  // {
+  //   label: "Labs",
+  //   sectionId: "labs",
+  // },
   {
-    label: "Labs",
-    sectionId: "labs",
-  },
+  label: "Education",
+  sectionId: "education"
+},
   {
     label: "Contact",
     sectionId: "contact",

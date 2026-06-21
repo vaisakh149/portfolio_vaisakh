@@ -1,20 +1,26 @@
 @import "tailwindcss";
 
 /* Force global dark theme baseline rules directly on the DOM roots */
-:root, html, body {
+:root,
+html,
+body {
   background-color: #030712 !important;
   color: #cbd5e1 !important;
   scroll-behavior: smooth;
 }
 
 /* Ensure all link and header elements contrast flawlessly against the dark base */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #f8fafc !important;
 }
 
 a {
-  color: #2dd4bf !important;
+  color: #2dd4bf ;
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -28,6 +34,7 @@ a {
 .animate-marquee {
   animation: marquee 18s linear infinite;
 }
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -35,4 +42,166 @@ a {
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  padding: 24px;
+  border: 1px solid #2b4c66;
+  border-radius: 12px;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 900px;
+  background: #111827;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.project-card {
+  background: rgba(8, 16, 40, 0.8);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #00d4ff;
+  box-shadow:
+    0 0 20px rgba(0, 212, 255, 0.15);
+}
+
+.project-card h3 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.project-tech {
+  color: #00d4ff;
+  margin-top: auto;
+  font-size: 14px;
+}
+
+.demo-btn {
+  margin-top: 16px;
+  background: #00d4ff;
+  color: #04111f;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.demo-btn:hover {
+  opacity: 0.9;
+}
+
+.modal-content {
+  width: 95vw;
+  height: 90vh;
+}
+
+.education-section,
+.contact-section {
+  padding: 80px 0;
+}
+
+.education-section h2,
+.contact-section h2 {
+  color: white;
+  margin-bottom: 24px;
+}
+
+.education-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 24px;
+}
+
+.education-card,
+.contact-card {
+  background: rgba(8, 16, 40, 0.8);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.education-card h3,
+.contact-card h3 {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.contact-description {
+  margin-bottom: 24px;
+  color: #9ca3af;
+}
+
+.contact-item {
+  margin-bottom: 16px;
+}
+
+.contact-item strong {
+  color: #00d4ff;
+}
+
+.contact-link {
+  display: block;
+  color: #00d4ff;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: #00d4ff;
+  color: #04111f;
+  text-decoration: none;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 12px;
 }

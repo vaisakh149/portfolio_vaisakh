@@ -2,7 +2,7 @@ import HeroStats from "./HeroStats";
 export default function HeroSection() {
   return (
     <section
-  id="experience"
+  id="hero"
   className="mt-24"
 >
       {/* Background Glow */}
