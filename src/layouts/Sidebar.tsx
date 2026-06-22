@@ -15,11 +15,11 @@ export default function Sidebar() {
       {/* Logo */}
       <div>
         <h1 className="text-2xl font-bold tracking-wide text-white">
-          Vaisakh<span className="text-cyan-400">.</span>
+          Vaisakh Mullassery<span className="text-cyan-400">.</span>
         </h1>
 
         <p className="mt-2 text-sm text-slate-400">
-          Frontend Engineer
+          Senior Frontend Developer 
         </p>
       </div>
 
