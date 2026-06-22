@@ -1,5 +1,12 @@
 import HeroStats from "./HeroStats";
 export default function HeroSection() {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)
+      ?.scrollIntoView({
+        behavior: "smooth"
+      });
+  }
+
   return (
     <section
   id="hero"
@@ -32,11 +39,13 @@ export default function HeroSection() {
         {/* CTA */}
         <div className="mt-8 flex flex-wrap gap-3">
           
-          <button className="rounded-xl bg-cyan-400 px-5 py-3 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:bg-cyan-300 sm:px-6">
+          <button className="rounded-xl bg-cyan-400 px-5 py-3 text-sm font-medium text-black 
+          transition-all duration-300 hover:scale-105 hover:bg-cyan-300 sm:px-6" onClick={()=> scrollToSection("projects")}>
             View Projects
           </button>
 
-          <button className="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400 sm:px-6">
+          <button className="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 
+          transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400 sm:px-6" onClick={()=> scrollToSection("contact")}>
             Contact Me
           </button>
         </div>
