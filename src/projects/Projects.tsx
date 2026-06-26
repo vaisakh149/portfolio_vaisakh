@@ -1,11 +1,9 @@
 import { useState } from "react";
-
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
-
 import { projects, type Project } from "./projectData";
-
 import TodoApp from "./apps/TodoApp/TodoApp";
+import MineFleetAI from "./apps/MineFleetAI/MineFeetAl";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] =
@@ -19,19 +17,6 @@ const Projects = () => {
     setSelectedProject(null);
   };
 
-  const renderProject = () => {
-    switch (selectedProject?.id) {
-      case "todo":
-        return <TodoApp />;
-
-      default:
-        return (
-          <div>
-            Project not available
-          </div>
-        );
-    }
-  };
 
   return (
     <section id="projects">
@@ -52,11 +37,15 @@ const Projects = () => {
       </div>
 
       {selectedProject && (
-        <ProjectModal
-          onClose={closeProject}
-        >
-          {renderProject()}
-        </ProjectModal>
+       <ProjectModal onClose={closeProject}>
+  {selectedProject?.id === "todo" && (
+    <TodoApp />
+  )}
+
+  {selectedProject?.id === "minefleet" && (
+    <MineFleetAI />
+  )}
+</ProjectModal>
       )}
     </section>
   );

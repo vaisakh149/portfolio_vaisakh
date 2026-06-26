@@ -294,3 +294,141 @@ cursor: pointer;
 .todo-delete-btn:hover {
 opacity: 0.9;
 }
+.minefleet-container {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.minefleet-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  text-align: center;
+}
+
+.minefleet-login h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.minefleet-login p {
+  color: #94a3b8;
+  font-size: 18px;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  min-height: 70vh;
+}
+
+.login-card {
+  width: 420px;
+
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(0, 212, 255, 0.15);
+
+  border-radius: 16px;
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+}
+
+.login-card h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 32px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #cbd5e1;
+}
+
+.form-group input {
+  width: 100%;
+
+  padding: 14px;
+
+  background: #111827;
+
+  border: 1px solid #334155;
+
+  border-radius: 10px;
+
+  color: white;
+
+  font-size: 15px;
+}
+
+.form-group input:focus {
+  outline: none;
+
+  border-color: #00d4ff;
+}
+
+.remember-me {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.login-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  background: #00d4ff;
+
+  color: #04111f;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.login-footer {
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+}

@@ -13,15 +13,11 @@ export const projects: Project[] = [
     tech: "React + TypeScript",
   },
   {
-    id: "weather",
-    title: "Weather Dashboard",
-    description: "Live weather forecast application",
-    tech: "React + API",
-  },
-  {
-    id: "expense",
-    title: "Expense Tracker",
-    description: "Track income and expenses",
-    tech: "React + Redux",
+    id: "minefleet",
+    title: "MineFleet AI",
+    description:
+      "Real-time autonomous fleet monitoring platform",
+    tech:
+      "React + TypeScript + Node.js + AI",
   },
 ];
