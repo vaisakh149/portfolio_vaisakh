@@ -60,19 +60,41 @@ a {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-
+  background: rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .modal-content {
-  width: 80%;
-  max-width: 900px;
-  background: #111827;
-  padding: 24px;
-  border-radius: 12px;
+  position: relative;
+  width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+  background: #04111f;
+  border-radius: 20px;
+  overflow: auto;
+  padding: 40px;
+}
+body.modal-open {
+  overflow: hidden;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .project-grid {
@@ -330,11 +352,8 @@ opacity: 0.9;
 
 .login-card {
   width: 420px;
-
   padding: 40px;
-
   background: rgba(255, 255, 255, 0.04);
-
   border: 1px solid rgba(0, 212, 255, 0.15);
 
   border-radius: 16px;
@@ -409,6 +428,8 @@ opacity: 0.9;
   color: #94a3b8;
   font-size: 13px;
 }
-body.modal-open {
-  overflow: hidden;
+
+.login-error {
+  color: #ef4444;
+  margin-bottom: 16px;
 }

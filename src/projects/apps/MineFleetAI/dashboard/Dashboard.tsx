@@ -1,11 +1,24 @@
-import React from 'react'
-
-function Dashboard() {
-  return (
-    <div>
-      
-    </div>
-  )
+interface DashboardProps {
+  onLogout: () => void;
 }
 
-export default Dashboard
+const Dashboard = ({
+  onLogout,
+}: DashboardProps) => {
+  return (
+    <div className="dashboard-container">
+      <h1>MineFleet Dashboard</h1>
+
+      <p>Welcome to MineFleet AI.</p>
+
+      <button
+        className="logout-btn"
+        onClick={onLogout}
+      >
+        Logout
+      </button>
+    </div>
+  );
+};
+
+export default Dashboard;
